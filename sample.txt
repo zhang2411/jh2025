@@ -1,0 +1,2 @@
+Hello, world!書き込むRuby
+Hello, world!

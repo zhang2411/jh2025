@@ -4,7 +4,6 @@
     "dockerfile": "./Dockerfile"
   },
   "workspaceFolder": "/workspace", 
-  "workspaceMount": "source=${localWorkspaceFolder}/src,target=/workspace,type=bind,consistency=cached",
   "appPort": [
     "80:80"
   ],

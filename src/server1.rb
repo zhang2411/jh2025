@@ -10,7 +10,7 @@ def server sock
   sock.close  # Close the socket when done
 end
 
-s0 = TCPServer.open(80)  # Listen on port 2000
+s0 = TCPServer.open(80)  # Listen on port 80
 while true
   sock = s0.accept  # Wait for a client to connect
   Thread.new do
@@ -19,3 +19,5 @@ while true
 end
 
 s0.close  # Close the server socket when done
+
+#送信側　telnet localhost 80

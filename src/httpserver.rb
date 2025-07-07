@@ -13,6 +13,7 @@ s0 = TCPServer.open(80)
 loop do
   sock = s0.accept
   Thread.new do
+    sock.puts  
     while line = sock.gets&.chomp
       pp line  # Print the received data to the console
       sock.puts line
